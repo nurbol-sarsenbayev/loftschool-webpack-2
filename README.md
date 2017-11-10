@@ -66,7 +66,7 @@
     ```json
     {
         ...
-        scripts: {
+        "scripts": {
             ...
             "start": "webpack"
         }
