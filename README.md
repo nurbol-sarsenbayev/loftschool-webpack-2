@@ -73,4 +73,19 @@
         ...
     }
     ```
-    * Запустим команду `npm start` в терминале. Появится папка *build*, где будет находится два файла: *index.html* и *main.js*;
+    * Запустим команду `npm run start` в терминале. Появится папка *build*, где будет находится два файла: *index.html* и *main.js*;
+9. Установим локальный сервер **node-static** запустив `npm i --save-dev node-static`;
+10. Добавим новый npm-скрипт в *package.json*, который запустить локальный сервер в папке *build*, где лежит html и js файл сгенирированный Webpack-ом.
+```json
+{
+    ...
+    "scripts": {
+        ...
+        "serv": "static build"
+    }
+    ...
+}
+
+``` 
+11. Запустим локальный сервер, набрав команду `npm run serve`. В консоле видем сообщение, что сервер запущен. Открыв браузер по указанному адресу в консоле, мы можем посмотреть на результаты работы Webpack.
+![node-static-console](https://nurbol-sarsenbayev.github.io/images/loftschool-webpack-2/node-static-console.jpg)
