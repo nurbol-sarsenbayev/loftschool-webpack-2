@@ -13,8 +13,7 @@
 6. Добавляем javascript модулей для примера
     1. Добавим папку sources
     2. Создаем два js файла: index.js и menu.js
-    3. В файл menu.js мы поместим функцию, которая будет создавать список пунктов меню,
-    ```js
+    3. В файл menu.js мы поместим функцию, которая будет создавать список пунктов меню,```js
     export default function (array, className) {
         var menu = document.createElement("ul");
         menu.className = className;
